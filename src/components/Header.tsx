@@ -4,6 +4,7 @@ import MenuItem from "./MenuItem";
 
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoSquareFill } from "react-icons/bs";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 export default function Header() {
   return (
@@ -13,11 +14,12 @@ export default function Header() {
       <MenuItem title="ABOUT" address="/about" Icon={BsFillInfoSquareFill}/>
     </div>
 
-    <div className="">
+    <div className="flex items-center space-x-5">
+      <DarkModeSwitch />
       <Link href="/">
         <h2 className="text-2xl flex items-center space-x-2">
           <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg">IMDb</span>
-          <span className="text-xl hidden sm:block">CLONE</span>
+          <span className="text-xl hidden sm:block">Clone</span>
         </h2>
       </Link>
     </div>
