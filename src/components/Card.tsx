@@ -22,7 +22,7 @@ export default function Card({result}: ICardProps) {
                 }}
                 src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
                 alt="image not found"
-                className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
+                className="mx-auto my-6 sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
                 placeholder="blur"
                 blurDataURL="/spinner.svg"
             />
