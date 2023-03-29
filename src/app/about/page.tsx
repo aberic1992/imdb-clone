@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='max-w-6xl mx-auto space-y-4'>
+    <div className='max-w-6xl mx-auto space-y-4 p-4'>
         <h1 className='text-2xl font-medium text-amber-600 space-y-4'>About</h1>
         <p>
             The history of textbooks dates back to ancient civilizations. For example, Ancient Greeks wrote educational texts. The modern textbook has its roots in the mass production made possible by the printing press. Johannes Gutenberg himself may have printed editions of Ars Minor, a schoolbook on Latin grammar by Aelius Donatus. Early textbooks were used by tutors and teachers (e.g. alphabet books), as well as by individuals who taught themselves.
