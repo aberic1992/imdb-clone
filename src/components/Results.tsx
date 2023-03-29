@@ -1,30 +1,16 @@
-interface IResult {
-    adult: boolean;
-    backdrop_path: string;
-    id: number;
-    title: string;
-    original_language: string;
-    original_title: string;
-    overview: string;
-    poster_path: string;
-    media_type: string;
-    genre_ids: number[];
-    popularity: number;
-    release_date: string;
-    video: boolean;
-    vote_average: number;
-    vote_count: number;
-}
+import { IResult } from "@/interfaces";
+import Card from "./Card";
 
-interface IProps {
+
+interface IResults {
     results: IResult[];
 }
 
-export default function Results({results}:IProps) {
+export default function Results({results}:IResults) {
   return (
-    <div className="flex flex-col">
+    <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto py-4">
         {results.map((result: IResult)=> (
-            <span key={result.id}>{result.title}</span>
+            <Card key={result.id} result={result} />
         ))}
     </div>
   )
