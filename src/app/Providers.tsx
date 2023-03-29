@@ -1,8 +1,6 @@
-
-"use client"
+"use client";
 import { ThemeProvider } from "next-themes";
 import { ReactNode } from 'react';
-
 
 interface IProviderProps {
   children: ReactNode;
@@ -15,7 +13,6 @@ export default function Providers({children}:IProviderProps) {
        text-gray-700 transition-colors duration-300 min-h-screen select-none'>
         {children}
       </div>
-        
     </ThemeProvider>
   )
 }
